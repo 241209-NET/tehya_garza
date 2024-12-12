@@ -1,0 +1,15 @@
+C:\Users\tehya\OneDrive\Desktop\DotNet Practice\tehya_garza\MiniProj\bin\Debug\net8.0\MiniProj.exe
+C:\Users\tehya\OneDrive\Desktop\DotNet Practice\tehya_garza\MiniProj\bin\Debug\net8.0\MiniProj.deps.json
+C:\Users\tehya\OneDrive\Desktop\DotNet Practice\tehya_garza\MiniProj\bin\Debug\net8.0\MiniProj.runtimeconfig.json
+C:\Users\tehya\OneDrive\Desktop\DotNet Practice\tehya_garza\MiniProj\bin\Debug\net8.0\MiniProj.dll
+C:\Users\tehya\OneDrive\Desktop\DotNet Practice\tehya_garza\MiniProj\bin\Debug\net8.0\MiniProj.pdb
+C:\Users\tehya\OneDrive\Desktop\DotNet Practice\tehya_garza\MiniProj\obj\Debug\net8.0\MiniProj.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tehya\OneDrive\Desktop\DotNet Practice\tehya_garza\MiniProj\obj\Debug\net8.0\MiniProj.AssemblyInfoInputs.cache
+C:\Users\tehya\OneDrive\Desktop\DotNet Practice\tehya_garza\MiniProj\obj\Debug\net8.0\MiniProj.AssemblyInfo.cs
+C:\Users\tehya\OneDrive\Desktop\DotNet Practice\tehya_garza\MiniProj\obj\Debug\net8.0\MiniProj.csproj.CoreCompileInputs.cache
+C:\Users\tehya\OneDrive\Desktop\DotNet Practice\tehya_garza\MiniProj\obj\Debug\net8.0\MiniProj.sourcelink.json
+C:\Users\tehya\OneDrive\Desktop\DotNet Practice\tehya_garza\MiniProj\obj\Debug\net8.0\MiniProj.dll
+C:\Users\tehya\OneDrive\Desktop\DotNet Practice\tehya_garza\MiniProj\obj\Debug\net8.0\refint\MiniProj.dll
+C:\Users\tehya\OneDrive\Desktop\DotNet Practice\tehya_garza\MiniProj\obj\Debug\net8.0\MiniProj.pdb
+C:\Users\tehya\OneDrive\Desktop\DotNet Practice\tehya_garza\MiniProj\obj\Debug\net8.0\MiniProj.genruntimeconfig.cache
+C:\Users\tehya\OneDrive\Desktop\DotNet Practice\tehya_garza\MiniProj\obj\Debug\net8.0\ref\MiniProj.dll
