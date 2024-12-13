@@ -9,7 +9,6 @@ public class Program
         // intro message and menu
         Console.WriteLine("Hi, welcome to Starbucks! Here's our menu, what can I get for you?\n(type in the number of your choice)\n");
         string menu = ("1.20 syrup pump Caramel Frappacino Java Chip Supreme\n2.Sad Bitter Black Coffee\n3.Soy milk with a shot of water :/");
-        
 
         try{
             
@@ -58,6 +57,7 @@ public class Program
             foreach(string o in orderList){
                 Console.Write(o + ", ");
             }
+
             Console.Write(" for " + wrong + "!");
 
         }
