@@ -7,27 +7,43 @@ public class Program
     public static void Main(string[] args)
     {
         // intro message and menu
-        Console.WriteLine("Hi, welcome to Starbucks! Here's our menu, what can I get for you?\n(type in the number of your choice)\n)");
-        Console.WriteLine("1.20 syrup pump Caramel Frappacino Java Chip Supreme\n2.Sad Bitter Black Coffee\n3.Soy milk with a shot of water :/");
+        Console.WriteLine("Hi, welcome to Starbucks! Here's our menu, what can I get for you?\n(type in the number of your choice)\n");
+        string menu = ("1.20 syrup pump Caramel Frappacino Java Chip Supreme\n2.Sad Bitter Black Coffee\n3.Soy milk with a shot of water :/");
+        
 
         try{
-            int orderNum = int.Parse(Console.ReadLine());
+            
             string order = "";
+            List<string> orderList = new List<string>();
+            string more = "n"; // more orders?
 
-            switch(orderNum){
+            while(more == "n"){
+
+                Console.WriteLine(menu);
+                int orderNum = int.Parse(Console.ReadLine());
+
+                switch(orderNum){
                 case 1:
                     order = "20 syrup pump Caramel Frappacino Java Chip Supreme";
+                    orderList.Add(order);
                     break;
                 case 2:
                     order = "Sad Bitter Black Coffee";
+                    orderList.Add(order);
                     break;
                 case 3:
                     order = "Soy milk with a shot of water";
+                    orderList.Add(order);
                     break;
                 default:
                     order = "That's not on the menu...";
                     break;
+                }
+                Console.Write("Will that complete your order?\n");
+                more = Console.ReadLine();
             }
+            
+            
 
             // get name
             Console.WriteLine("And the order is for?:\n");
@@ -36,7 +52,13 @@ public class Program
 
             // text and respond
             Console.WriteLine("\nAlright! We'll call you when your order's ready!\n\n.....10 minutes later.....\n");
-            Console.WriteLine("A " + order + " for " + wrong + "!");
+            Console.Write("A ");
+
+            // print out the list
+            foreach(string o in orderList){
+                Console.Write(o + ", ");
+            }
+            Console.Write(" for " + wrong + "!");
 
         }
         catch(Exception e){
