@@ -31,7 +31,7 @@ This is an ASP.NET Core application that allows users to build and persist outdo
 - User should be able to delete an existing cat's information
 
 ## Tables
-- TBD
+![alt text](Proj1ERD.png)
 
 ## MVP Goals
 - CRUD (create, retrieve, update, delete) operations on a cat table
