@@ -1,4 +1,4 @@
-# CatTail Stray Cat Catalogger
+# CatTail Stray Cat Cataloger
 
 This is an ASP.NET Core application that allows users to build and persist outdoor cat information to a backend. 
 
