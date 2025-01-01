@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CatTail.API.Migrations
 {
     [DbContext(typeof(CatContext))]
-    [Migration("20241230233701_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20250101212909_CatAtts")]
+    partial class CatAtts
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -32,15 +32,20 @@ namespace CatTail.API.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("Age")
+                    b.Property<int?>("Age")
                         .HasColumnType("int");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("SNStatus")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Sex")
-                        .IsRequired()
                         .HasColumnType("nvarchar(1)");
 
                     b.HasKey("Id");

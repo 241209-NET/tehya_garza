@@ -29,15 +29,20 @@ namespace CatTail.API.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("Age")
+                    b.Property<int?>("Age")
                         .HasColumnType("int");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("SNStatus")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Sex")
-                        .IsRequired()
                         .HasColumnType("nvarchar(1)");
 
                     b.HasKey("Id");

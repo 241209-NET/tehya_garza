@@ -11,11 +11,11 @@ public class CatController : ControllerBase
 
     public CatController(ICatService catService) => _catService = catService;
 
-    [HttpGet]
+    /*[HttpGet]
     public IActionResult ReturnHello()
     {
         return Ok("Hello");
-    }
+    }*/
 
      [HttpGet("{id}")]
     public IActionResult GetCatById(int id)
