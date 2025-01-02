@@ -9,6 +9,10 @@ public class CatService : ICatService
 
     public CatService(ICatRepository catRepository) => _catRepository = catRepository;
 
+    public async Task<Cat> CreateNewCat(Cat newCat)
+    {
+        return await _catRepository.CreateNewCat(newCat);
+    }
      public Cat? GetCatById(int id)
     {
         if(id < 1) return null;

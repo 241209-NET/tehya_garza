@@ -1,3 +1,4 @@
+using CatTail.API.Models;
 using CatTail.API.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,12 +12,14 @@ public class CatController : ControllerBase
 
     public CatController(ICatService catService) => _catService = catService;
 
-    /*[HttpGet]
-    public IActionResult ReturnHello()
+    [HttpPost]
+    public async Task<IActionResult> CreateNewCat(Cat newCat)
     {
-        return Ok("Hello");
-    }*/
+        var cat = _catService.CreateNewCat(newCat);
+        return Ok(await cat);
+    }
 
+    // Retrieve: get cat by id
      [HttpGet("{id}")]
     public IActionResult GetCatById(int id)
     {
