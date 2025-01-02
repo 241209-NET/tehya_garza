@@ -6,4 +6,7 @@ public interface ICatService
 {
     Cat? GetCatById(int id);
     Task<Cat> CreateNewCat(Cat newCat);
+
+    Cat? DeleteCatById(int id);
+    //Cat? UpdateCatById(int id);
 }

@@ -18,4 +18,18 @@ public class CatService : ICatService
         if(id < 1) return null;
         return _catRepository.GetCatById(id);
     }
+
+     public Cat? DeleteCatById(int id)
+    {
+        var cat = GetCatById(id);
+        if(cat is not null) _catRepository.DeleteCatById(id);
+        return cat;
+    }
+    /*public Cat? UpdateCatById(int id)
+    {
+        var cat = GetCatById(id);
+        if(cat is not null) _catRepository.UpdateCatById(id);
+        return cat;
+    }*/
+    
 }

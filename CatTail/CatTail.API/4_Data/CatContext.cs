@@ -3,10 +3,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CatTail.API.Data;
 
-public class CatContext : DbContext
+public partial class CatContext : DbContext
 {
     public CatContext(){}
     public CatContext(DbContextOptions<CatContext> options) : base(options){}
 
-    public DbSet<Cat> Cats { get; set; }
+    public virtual DbSet<Cat> Cats { get; set; }
 }

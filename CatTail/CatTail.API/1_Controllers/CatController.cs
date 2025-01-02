@@ -1,4 +1,5 @@
 using CatTail.API.Models;
+using CatTail.API.Repository;
 using CatTail.API.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,6 +13,7 @@ public class CatController : ControllerBase
 
     public CatController(ICatService catService) => _catService = catService;
 
+    // Create: create new cat
     [HttpPost]
     public async Task<IActionResult> CreateNewCat(Cat newCat)
     {
@@ -29,4 +31,29 @@ public class CatController : ControllerBase
         
         return Ok(findCat);
     }
+
+    /*// Update: update existing cat by id
+    [HttpPut("{id}")]
+    public async Task<ActionResult<Cat>> UpdateCatById(int id, [FromBody] Cat cat)
+    {
+        var updateCat = _catService.GetCatById(id);
+        if(updateCat is null) return NotFound();
+        
+        return Ok(updateCat);
+
+    }*/
+
+
+     // Delete: delete cat by id
+     [HttpDelete]
+    public IActionResult DeleteCatById(int id)
+    {
+        var deleteCat = _catService.DeleteCatById(id);
+
+        if(deleteCat is null) return NotFound();
+        
+        return Ok(deleteCat);
+    }
+
+    
 }
